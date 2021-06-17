@@ -65,7 +65,7 @@ let mostPets = 0;
 if ( pets > friendsPets){
   let mostPets = pets;}
   else if ( friendsPets > pets) {
-    let mostPets = friendsPets;
+  let mostPets = friendsPets;
   }
   else if ( pets === friendsPets) {
     let mostPets = pets;
@@ -78,14 +78,13 @@ console.log( mostPets);
 let mostPets = 0
 switch (mostPets){
     case ( pets > friendsPets ):
-      system.out.printIn('You have the most pets')
+      console.log('You have the most pets', mostPets )
       break;
     case ( friendsPets > pets):
-      system.out.printIn('Your friends have the most pets')
+      console.log('Your friends have the most pets', mostPets )
       break;
     default ( pets > friendsPets ):
-      system.out.printIn( 'you have the most pets')
+      console.log('you have the most pets', mostPets )
       break;
 }
-console.log(mostPets);
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
