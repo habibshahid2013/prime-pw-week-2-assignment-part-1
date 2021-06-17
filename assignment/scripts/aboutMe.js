@@ -75,4 +75,17 @@ console.log( mostPets);
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
+let mostPets = 0
+switch (mostPets){
+    case ( pets > friendsPets ):
+      system.out.printIn('You have the most pets')
+      break;
+    case ( friendsPets > pets):
+      system.out.printIn('Your friends have the most pets')
+      break;
+    default ( pets > friendsPets ):
+      system.out.printIn( 'you have the most pets')
+      break;
+}
+console.log(mostPets);
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
