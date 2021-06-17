@@ -60,8 +60,9 @@ else if ( pets > allowedPets) {
 // STRE
 
 // 16 - Make a variable called `mostPets` and a conditional that
-let mostPets = 0;
 // correctly checks the `pets` and `friendsPets` variables, and
+
+let mostPets = 0;
 if ( pets > friendsPets){
   let mostPets = pets;}
   else if ( friendsPets > pets) {
@@ -75,16 +76,21 @@ console.log( mostPets);
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
-let mostPets = 0
+
+mostPets = true
 switch (mostPets){
     case ( pets > friendsPets ):
-      console.log('You have the most pets', mostPets )
+      mostPets = pets
       break;
     case ( friendsPets > pets):
-      console.log('Your friends have the most pets', mostPets )
+      mostPets = friendsPets
       break;
-    default ( pets > friendsPets ):
-      console.log('you have the most pets', mostPets )
+    case ( friendsPets === pets ):
+    mostPets = 'You have a similar amount of pets'
+      break;
+    default :
+      console.log( 'invalid information')
       break;
 }
+console.log( mostPets);
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
